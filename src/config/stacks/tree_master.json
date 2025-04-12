@@ -1,0 +1,121 @@
+{
+	"nodes": {
+		"build cloth workfile": {
+			"nodeType": "build_cloth_workfile",
+			"version": "latest",
+			"pos": [-280, -152],
+			"attributeList": {
+				"useClothCache": 0
+			},
+			"output": "do sim Cloth",
+            "outarrow": ["do sim Cloth"]
+		},
+		"do sim Cloth": {
+			"nodeType": "ncache_cloth",
+			"version": "latest",
+			"pos": [-280, -81],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "publish abc Cloth",
+            "outarrow": ["publish abc Cloth"]
+		},
+		"publish abc Cloth": {
+			"nodeType": "publish_abc_cloth",
+			"version": "latest",
+			"pos": [-280, -10],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "create char cloth render file",
+            "outarrow": ["create char cloth render file"]
+		},
+		"create char cloth render file": {
+			"nodeType": "create_char_cloth_render_file",
+			"pos": [-280, 60],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "build curve workfile",
+            "outarrow": []
+		},
+		"build curve workfile": {
+			"nodeType": "build_curve_workfile",
+			"version": "latest",
+			"pos": [35, -214],
+			"attributeList": {
+				"useClothCache": 1
+			},
+			"output": "publish abc curves",
+            "outarrow": ["publish abc curves"]
+		},
+		"publish abc curves": {
+			"nodeType": "create_abc_curves",
+			"version": "latest",
+			"pos": [35, -144],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "build sim hair workfile",
+            "outarrow": ["build sim hair workfile", "publish static hair"]
+		},
+		"build sim hair workfile": {
+			"nodeType": "build_sim_hair_workfile",
+			"version": "latest",
+			"pos": [-70, -81],
+			"attributeList": {
+				"useClothCache": 1
+			},
+			"output": "do sim hair",
+            "outarrow": ["do sim hair"]
+		},
+		"do sim hair": {
+			"nodeType": "ncache_hair",
+			"pos": [-45, -10],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "publish .fur cache",
+            "outarrow": ["publish .fur cache"]
+		},
+		"publish .fur cache": {
+			"nodeType": "fur_cache_hair",
+			"pos": [-20, 60],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "publish static hair",
+            "outarrow": ["create char hair render file"]
+		},
+		"publish static hair": {
+			"nodeType": "publish_static_hair",
+			"version": "latest",
+			"pos": [120, -81],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101,
+				"useClothCache": 1
+			},
+			"output": "create char hair render file",
+            "outarrow": ["create char hair render file"]
+		},
+		"create char hair render file": {
+			"nodeType": "create_char_hair_render_file",
+			"version": "latest",
+			"pos": [35, 130],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101,
+				"useClothCache": 1
+			},
+			"output": "",
+            "outarrow": [""]
+		}
+	}
+}

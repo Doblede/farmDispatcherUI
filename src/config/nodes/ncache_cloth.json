@@ -1,0 +1,37 @@
+{
+	"nodeType": "ncache_cloth",
+    "group": "cloth",
+	"pos": [0, 0],
+	"icon": "./icons/dynHair.pic",
+	"color": [[23, 144, 246, 255],[15, 111, 193, 255]],
+	"attributeList": {
+		"enable": {
+			"attrType": "bool",
+			"value": 1
+		},
+		"startFrame": {
+			"attrType": "int",
+			"value": 60
+		},
+		"endFrame": {
+			"attrType": "int",
+			"value": 101
+		},
+		"savePreset": {
+			"attrType": "bool",
+			"value": 1
+		},
+        "addExtraFrames": {
+            "attrType": "bool",
+            "value": 1
+        },
+        "path": {
+			"attrType": "path",
+			"value": "",
+            "fileType": "cfxclothdyn",
+            "description": "clothAutoDyn",
+            "creator": 0,
+            "enable": 1
+        }
+	}
+}

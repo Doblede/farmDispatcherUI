@@ -1,0 +1,25 @@
+{
+	"nodeType": "build_curve_workfile",
+    "group": "hair",
+	"pos": [0, 0],
+	"icon": "./icons/curvetoabc.pic",
+	"color": [[15, 157, 15, 255],[8, 126, 8, 255]],
+	"attributeList": {
+		"enable": {
+			"attrType": "bool",
+			"value": 1
+		},
+		"useClothCache": {
+			"attrType": "bool",
+			"value": 1
+		},
+        "path": {
+			"attrType": "path",
+			"value": "",
+            "fileType": "cfxhrcrvs",
+            "description": "autoCurves",
+            "creator": 1,
+            "enable": 1
+        }
+	}
+}

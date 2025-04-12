@@ -1,0 +1,41 @@
+{
+	"trees": {
+		"Static Stack": "tree_static.json",
+		"Dynamic Stack": "tree_dynamic.json",
+        "Cloth Stack": "tree_cloth.json",
+		"Master Stack": "tree_master.json"
+	},
+
+	"render": {
+		"default": {
+			"nodeType": "render",
+			"attributeList": {
+				"startFrame": 101,
+				"endFrame": 200,
+				"includeSet": 0,
+				"description": "default"
+			},
+			"input": ["ALL CHARACTERS"]
+		},
+		"human": {
+			"nodeType": "render",
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101,
+				"includeSet": 0,
+				"description": "human"
+			},
+			"input": []
+		},
+		"animal": {
+			"nodeType": "render",
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101,
+				"includeSet": 0,
+				"description": "animal"
+			},
+			"input": []
+		}
+	}
+}

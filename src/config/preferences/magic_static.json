@@ -1,0 +1,18 @@
+{
+	"trees": {
+		"Static Stack": "tree_static.json"
+	},
+
+	"render": {
+		"default": {
+			"nodeType": "render",
+			"pos": [12, 600],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101,
+				"includeSet": 0
+			},
+			"input": ["ALL CHARACTERS"]
+		}
+	}
+}

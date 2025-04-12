@@ -1,0 +1,37 @@
+{
+    "nodeType": "ncache_hair",
+    "group": "hair",
+    "pos": [0, 0],
+    "icon": "./icons/dynHair.pic",
+    "color": [[23, 144, 246, 255],[15, 111, 193, 255]],
+    "attributeList": {
+        "enable": {
+            "attrType": "bool",
+            "value": 1
+        },
+        "startFrame": {
+            "attrType": "int",
+            "value": 1
+        },
+        "endFrame": {
+            "attrType": "int",
+            "value": 60
+        },
+        "savePreset": {
+            "attrType": "bool",
+            "value": 1
+        },
+        "addExtraFrames": {
+            "attrType": "bool",
+            "value": 1
+        },
+        "path": {
+            "attrType": "path",
+            "value": "",
+            "fileType": "cfxhr",
+            "description": "hairAutoDyn",
+            "creator": 0,
+            "enable": 1
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+	"nodeType": "create_abc_curves",
+    "group": "hair",
+	"pos": [0, 0],
+	"icon": "./icons/curvetoabc.pic",
+	"color": [[23, 144, 246, 255],[15, 111, 193, 255]],
+	"attributeList": {
+		"enable": {
+			"attrType": "bool",
+			"value": 1
+		},
+		"startFrame": {
+			"attrType": "int",
+			"value": 1
+		},
+		"endFrame": {
+			"attrType": "int",
+			"value": 101
+		},
+        "path": {
+			"attrType": "path",
+			"value": "",
+            "fileType": "cfxhrcrvs",
+            "description": "autoCurves",
+            "creator": 0,
+            "enable": 1
+        }
+	}
+}

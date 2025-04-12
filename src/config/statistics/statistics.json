@@ -1,0 +1,23 @@
+{
+    "david": {
+        "cloth": {
+            "shots": [],
+            "times": 0
+        },
+        "hair": {
+            "shots": [
+                "tst0055"
+            ],
+            "times": 1
+        },
+        "last_date": "2025-04-11_22:48:18",
+        "open_in_maya": 0,
+        "open_standalone": 23,
+        "render": {
+            "shots": [
+                "tst0055"
+            ],
+            "times": 1
+        }
+    }
+}

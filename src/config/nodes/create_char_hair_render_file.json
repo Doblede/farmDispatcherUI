@@ -1,0 +1,37 @@
+{
+	"nodeType": "create_char_hair_render_file",
+    "group": "hair",
+	"pos": [0, 0],
+	"icon": "./icons/curvetoabc.pic",
+	"color": [[236, 217, 6, 255],[236, 217, 6, 255]],
+	"attributeList": {
+		"enable": {
+			"attrType": "bool",
+			"value": 0
+		},
+		"useClothCache": {
+			"attrType": "bool",
+			"value": 1
+		},
+		"submitRender": {
+			"attrType": "bool",
+			"value": 0
+		},
+        "startFrame": {
+			"attrType": "int",
+			"value": 1
+		},
+		"endFrame": {
+			"attrType": "int",
+			"value": 101
+		},
+        "path": {
+			"attrType": "path",
+			"value": "",
+            "fileType": "cfxhrr",
+            "description": "autoRender",
+            "creator": 1,
+            "enable": 1
+        }
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"nodeType": "render",
+    "group": "render",
+	"name": "render",
+	"pos": [0, 0],
+	"icon": "./icons/renderHair.pic",
+	"color": [[23, 144, 246, 255],[15, 111, 193, 255]],
+	"attributeList": {
+		"enable": {
+			"attrType": "bool",
+			"value": 1
+		},
+		"startFrame": {
+			"attrType": "int",
+			"value": 1
+		},
+		"endFrame": {
+			"attrType": "int",
+			"value": 101
+		},
+		"includeSet": {
+			"attrType": "bool",
+			"value": 1
+		},
+		"description": {
+			"attrType": "string",
+			"value": "default"
+        },
+		"engine": {
+			"attrType": "list",
+			"options": ["arnold"],
+			"value": "arnold"
+		},
+		"useClothCache": {
+			"attrType": "bool",
+			"value": 1
+		},
+		"submitRender": {
+			"attrType": "bool",
+			"value": 1
+		}
+    },
+    "submitRender": {
+		"preset": {
+			"attrType": "list",
+			"options": ["magicButton", "R1", "R2", "R3", "R4"],
+			"value": "magicButton"
+		},
+		"AASamples": {
+			"attrType": "int",
+			"value": 4
+		},
+		"DiffSamples": {
+			"attrType": "int",
+			"value": 2
+		},
+		"GlossSamples": {
+			"attrType": "int",
+			"value": 1
+		},
+		"RefrSamples": {
+			"attrType": "int",
+			"value": 0
+		},
+		"SSSSamples": {
+			"attrType": "int",
+			"value": 2
+		},
+		"motionBlur": {
+			"attrType": "bool",
+			"value": 1
+		}
+	}
+}

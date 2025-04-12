@@ -1,0 +1,46 @@
+{
+	"nodes": {
+		"build cloth workfile": {
+			"nodeType": "build_cloth_workfile",
+			"version": "latest",
+			"pos": [-50, -152],
+			"attributeList": {
+				"useClothCache": 0
+			},
+			"output": "do sim Cloth",
+            "outarrow": ["do sim Cloth"]
+		},
+		"do sim Cloth": {
+			"nodeType": "ncache_cloth",
+			"version": "latest",
+			"pos": [-50, -81],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "publish abc Cloth",
+            "outarrow": ["publish abc Cloth"]
+		},
+		"publish abc Cloth": {
+			"nodeType": "publish_abc_cloth",
+			"version": "latest",
+			"pos": [-50, -10],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "create char cloth render file",
+            "outarrow": ["create char cloth render file"]
+		},
+		"create char cloth render file": {
+			"nodeType": "create_char_cloth_render_file",
+			"pos": [-50, 60],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "",
+            "outarrow": []
+		}
+	}
+}

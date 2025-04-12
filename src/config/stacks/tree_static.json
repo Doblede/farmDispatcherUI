@@ -1,0 +1,49 @@
+{
+    "nodes": {
+        "build curve workfile": {
+			"nodeType": "build_curve_workfile",
+			"version": "latest",
+			"pos": [-50, -145],
+			"attributeList": {
+				"useClothCache": 0
+			},
+			"output": "publish abc curves",
+            "outarrow": ["publish abc curves"]
+		},
+		"publish abc curves": {
+			"nodeType": "create_abc_curves",
+			"version": "latest",
+			"pos": [-50, -63],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101
+			},
+			"output": "publish static hair",
+            "outarrow": ["publish static hair"]
+		},
+        "publish static hair": {
+			"nodeType": "publish_static_hair",
+			"version": "latest",
+			"pos": [-50, 19],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101,
+				"useClothCache": 0
+			},
+            "output": "create char hair render file",
+            "outarrow": ["create char hair render file"]
+		},
+		"create char hair render file": {
+			"nodeType": "create_char_hair_render_file",
+			"version": "latest",
+			"pos": [-50, 101],
+			"attributeList": {
+				"startFrame": 1,
+				"endFrame": 101,
+				"useClothCache": 1
+			},
+			"output": "",
+            "outarrow": [""]
+		}
+    }
+}
