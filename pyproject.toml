@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "farm-dispatcher"
+version = "2.0.0"
+description = "Build CFX cloth / hair / render farm submissions for a shot from configurable pipeline stacks."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "David De Juan" }]
+requires-python = ">=3.9"
+# No hard Qt dependency: Maya provides PySide2/PySide6. Install the
+# "standalone" extra to run outside Maya.
+dependencies = []
+
+[project.optional-dependencies]
+standalone = ["PySide6-Essentials>=6.5"]
+dev = ["PySide6-Essentials>=6.5", "pytest>=7"]
+
+[project.scripts]
+farm-dispatcher = "farm_dispatcher.app:main"
+
+[tool.setuptools.packages.find]
+include = ["farm_dispatcher*"]
+
+[tool.setuptools.package-data]
+farm_dispatcher = ["config/*/*.json", "icons/*.png"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
